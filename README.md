@@ -15,7 +15,7 @@ This is the backend for the **Photo-AI** application. It handles image processin
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/Photo-AI-backend.git
+git clone https://github.com/durgesh4040/Photo-AI.git
 cd Photo-AI-backend
 npm install
 
