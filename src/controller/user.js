@@ -79,14 +79,15 @@ export  const me=async (req,res)=>{
  
     const user = await userModel.findOne({ _id: req.userId });
 
-    if(req.userId){
-     console.log(user.email);
-   
-    res.json({
-      message:"login authenticate"
-    })
+    
+    if(!user){
+     return  res.json({
+         message:"Empty user"
+      })
    }
-   }catch(error){
+    
+   }
+   catch(error){
       return res.status(400).json({
          message:"fail to login"
       })

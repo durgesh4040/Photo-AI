@@ -10,9 +10,9 @@ router.post("/api/v1/user/signin",userController.signin);
 // testing purpose
 router.get("/api/v1/user/me",authorization,userController.me);
 
-router.post("/api/v1/photo/upload",authorization,uploadImage,photocontroller.upload);
+router.post("/api/v1/photo/upload",authorization ,uploadImage,photocontroller.upload);
 router.post("/api/v1/photo/enhance",authorization,photocontroller.enhance);
-router.post("/api/v1/photo/removeBackground",authorization,photocontroller.removeBackground);
+router.post("/api/v1/photo/removeBackground",authorization,uploadImage,photocontroller.removeBackground);
 
 
 export default router;

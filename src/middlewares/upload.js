@@ -12,7 +12,6 @@ if(!fs.existsSync(uploadDir)){
 }
 
 // storage configuration
-
 const storage=multer.diskStorage(
     {
         destination:function(req,file,cb){
@@ -28,7 +27,6 @@ const storage=multer.diskStorage(
 )
 
 // File filter
-
 const filefilter=(req,file,cb)=>{
     const allowedFileTypes=/jpeg|jpg|png|webp/;
     const extname=allowedFileTypes.test(path.extname(file.originalname).toLowerCase());
